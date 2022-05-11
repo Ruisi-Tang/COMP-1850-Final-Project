@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+        <title>Ruisi Tang - Final Project - Contact</title>
+        <link rel="stylesheet" href="global.css">
+		<meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+	</head>
+	<body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="site_map.html">Site Map</a></li>
+                <li><a href="about.html">About Ruisi</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
+                <li><a href="contact.html" id="current">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div id="header_box">
+            <header>
+                <h1>Connect with Me!</h1>
+                <h2>And also leave your comment here!&#128526;</h2>
+            </header>
+        </div>
+        
+        <div class="for_main">
+            <div id="contact">
+                <form> <!-- didn't include action since it's a form shell and won't do anything -->
+                    <p id="q1">Something basic about you...</p>
+                    <label for="fname">First Name: </label>
+                    <input type="text" name="fname" id="fname"><br>
+                    <label for="lname" id="lname_label">Last Name: </label>
+                    <input type="text" name="lname" id="lname"><br>
+                    <label for="prefix" id="prefix_label">Prefix: </label>
+                    <select name="prefix" id="prefix">
+                        <option value=" ">Please choose...</option>
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                        <option value="ms">Ms.</option>
+                        <option value="dr">Dr.</option>
+                        <option value="na">I Don't Know</option>
+                    </select><br>
+                    <p id="q2">How can I reach you out?</p>
+                    <label for="phone" id="phone_label">Phone: </label>
+                    <input type="text" name="phone" id="phone"><br>
+                    <label for="email" id="email_label">Email: </label>
+                    <input type="text" name="email" id="email"><br>
+                    <p id="q3">How did you heared about me?</p>
+                    <span id="source_selections">
+                        <input type="radio" name="source" id="1850">
+                        <label for="1850"> COMP1850 Class</label>
+                        <input type="radio" name="source" id="ig">
+                        <label for="ig"> Instagram</label>
+                        <input type="radio" name="source" id="nts">
+                        <label for="nts"> I prefer not to say</label><br>
+                        <input type="radio" name="source" id="other1">
+                        <label for="other1">Others, please specify:</label>
+                        <input type="text" name="source" id="other2">
+                    </span>
+                    <p id="q4">How do you think about my wesite?</p>
+                    <textarea name="commentbox" id="commentbox">Comment here...</textarea>
+                    <p id="q5">For Dave Only: How many marks you would give for my website?</p>
+                    <select name="scores" id="scores">
+                        <option value=" ">Please choose...</option>
+                        <option value="90-100">Impressive - Full Mark</option>
+                        <option value="80-89">Great - 80% - 90%</option>
+                        <option value="60-79">Okay - 60% - 79%</option>
+                        <option value="60-59">Not Bad - 50% - 59%</option>
+                        <option value="fail">This is a cr*p, I am fAiLiNg you. </option>
+                    </select><br>
+                    
+                    <div id="buttons">
+                        <input type="submit" value="Submit" onclick="msg()">
+                        <input type="reset" value="Reset Form">
+                        <script>
+                            function msg() {
+                                alert('Submission Successful!')
+                            }
+                        </script>
+                    </div>
+                </form>
+                
+                <table id=contact_info>
+                    <tr>
+                        <th>Phone:</th>
+                        <td>(604)123-4567</td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td><a href="mailto:rtang55@my.bcit.ca">rtang55@my.bcit.ca</a></td>
+                    </tr>
+                    <tr>
+                        <th>Address:</th>
+                        <td>BCIT Burnaby Campus</td>
+                    </tr>
+                    <tr>
+                        <th>Website:</th>
+                        <td><a href="http://students.bcitwebdev.com/rtang55/?C=S;O=A">http://students.bcitwebdev.com/rtang55</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <footer>
+            <ul>
+                <li>&copy; Ruisi Tang</li>
+                <li><a href="mailto:rtang55@my.bcit.ca">rtang55@my.bcit.ca</a></li>
+                <li><a href="http://www.bcitwebdev.com/">COMP 1850</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
